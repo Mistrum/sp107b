@@ -112,7 +112,7 @@ void IF(){
 
 void STMT() {
   if (isNext("while"))
-    return WHILE();
+    WHILE();
   else if (isNext("if"))
     IF();
   else if (isNext("{"))
