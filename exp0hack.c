@@ -60,7 +60,7 @@ void genOp2(int i, int i1, char op, int i2) {
 int F() {
   int f;
   char c = ch();
-  if (isdigit(c)||) {
+  if (isdigit(c)||isalpha(c)) {
     next(); // skip c
     f = nextTemp();
     genOp1(f, c);
