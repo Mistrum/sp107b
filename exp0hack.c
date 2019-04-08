@@ -108,7 +108,8 @@ void parse(char *str) {
 
 int main(int argc, char * argv[]) {
   printf("=== EBNF Grammar =====\n");
-  printf("E=F ([+-] F)*\n");
+  printf("E=T ([+-] T)*\n");
+  printf("T=F ([*/] F)*\n");
   printf("F=Number | '(' E ')'\n");
   printf("==== parse:%s ========\n", argv[1]);
   parse(argv[1]);
