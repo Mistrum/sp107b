@@ -102,10 +102,9 @@ void IF(){
   STMT();
   emit("if t%d goto L%d\n", e, endifLabel);
   if(isNext("else")){
-    emit("L%d",elseLabel);
-    skip("(");
+    emit("(L%d)\n",elseLabel);
+    skip("else");
     STMT();
-    skip(")");
   }
   emit("L%d", endifLabel);
 }
